@@ -1,0 +1,37 @@
+{
+    "version": "1",
+    "name": "Firefox OS Test Pick Activity",
+    "launch_path": "/index.html",
+    "description": "Firefox OS app Test Pick Activity",
+    "icons": {
+        "16": "/images/WrenchIcon16.png",
+        "32": "/images/WrenchIcon32.png",
+        "48": "/images/WrenchIcon48.png",
+        "64": "/images/WrenchIcon.png",
+        "128": "/images/WrenchIcon128.png"
+    },
+    "developer": {
+        "name": "Jason Weathersby",
+        "url": "http://www.mozilla.com"
+    },
+    "installs_allowed_from": [
+        "*"
+    ],
+
+    "activities": {
+        "pick": {
+            "href": "./index.html",
+            "disposition": "inline",
+            "filters": {
+                "type": "image/*",
+                "appname": "abc"
+            },
+            "returnValue": true
+        }
+    },
+    "default_locale": "en",
+    "permissions": {
+        "systemXHR": {}
+    },
+    "type": "privileged"
+}
